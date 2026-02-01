@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> final flex </title>
+        <style>
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.image{
+    width:250;
+    padding-top:10px;
+    padding-bottom:10px;
+margin-right: auto;
+
+}
+    .container{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background-color: beige;
+padding: 10px 40px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.nav-links{
+    display: flex; 
+    gap:20px;
+}
+.item{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding:8px 16px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.item:hover{
+    padding: 20px;
+    background-color: yellow;
+    color: #00704A;
+
+}
+.login-btn{border:1px solid black;
+
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    padding:40px;
+}
+.coffee-card{
+    background-color: #f9f9f9;
+    border:1px solid #e0e0e0;
+    height:250px;
+    border-radius:12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.2rem;
+    transition: transform 0.3s ease;
+
+}
+.coffee-card:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 10PX 20PX RGBA(0,0,0,0.1);
+}
+        </style>
+    </head>
+    <body>
+    
+<div class="container">
+    <img src="images.jpeg" class="image" alt="starbucks">
+<div class="nav-links">
+    <div class="item login-btn">login</div>
+    <div class="item">logout</div></div>
+</nav>
+
+<div class="menu-grid">
+    <div class="coffee-card">Caffe Latte</div>
+    <div class="coffee-card">Cappuccino</div>
+    <div class="coffee-card">Caramel Macchiato</div>
+    <div class="coffee-card">Iced Americano</div>
+    <div class="coffee-card">Mocha Frappuccino</div>
+    <div class="coffee-card">Java chips</div>
+    <div class="coffee-card">Coffee hyper</div>
+</div>
+
+
+
+
+</div>
+    </body>
+</html>

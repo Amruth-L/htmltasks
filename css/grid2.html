@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid 2box
+        </title>
+        <style>
+.container{
+    width:80vw;
+    height:50vh;
+    align-items: center;
+    border: 2px solid black;
+    display: grid;
+ grid-template-columns:repeat(4,minmax(100px,1fr));
+ justify-items:flex-end;
+row-gap: 10px;
+column-gap: 44px;
+}
+.item{
+    border:2px solid red;
+    height:55px;
+    width: 55px;
+}
+.item-2{
+align-self:start;
+justify-self: end;}
+        </style>
+    </head>
+    <body>
+        <div class ="container">
+            <div class="item">box1</div>
+            <div class="item item-2">box2</div>
+            <div class="item">box3</div>
+            <div class="item">box4</div>
+            <div class="item">box5</div>
+        </div>
+    </body>
+</html>
