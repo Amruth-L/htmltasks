@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom4
+        </title>
+    </head>
+    <body>
+        <h2 id="title">Who is the hero?</h2>
+        <button id="hero-btn">Reveal Hero</button>
+    </body>
+    <script>
+        const hero=document.querySelector('#title');
+        const he=document.querySelector('#hero-btn');
+        he.addEventListener('click',()=>{
+            if(hero.textContent==="who is the hero?"){
+                hero.textContent="Darshan(DBOSS)";
+                hero.style.color="red";
+                he.textContent="hide hero";
+
+            }
+            else{
+hero.textContent="who is the hero?";
+hero.style.color="black";
+he.textContent="Reveal hero";
+            }
+
+        });
+    </script>
+</html>

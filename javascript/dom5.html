@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> dom5</title>
+    </head>
+    <body>
+        <button id="add-fruit">Add fruit </button>
+        <ul id="my-list"></ul>
+   <script>
+    const list=document.querySelector('#my-list');
+    const btn=document.querySelector('#add-fruit');
+    btn.addEventListener('click',()=>{
+        const newfruit=document.createElement('li');
+        newfruit.textContent="mango";
+        const deletebtn=document.createElement('button');
+        deletebtn.textContent="remove me";
+        deletebtn.style.marginLeft="10px";
+        deletebtn.addEventListener('click',()=>{
+            newfruit.remove();
+        });
+        newfruit.appendChild(deletebtn);
+        list.appendChild(newfruit);
+    });
+   </script>
+   
+    </body>
+</html>

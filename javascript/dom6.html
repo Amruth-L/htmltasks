@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom6</title>
+    </head>
+    <body id ="body">
+        <h2>TODO 1</h2>
+        <h2>TODO 2</h2>
+        <h3>TODO 3</h3>
+        <button onclick="deleteRandomTodo()">updating tools</button>
+      </body>
+      <script>
+function deleteRandomTodo(){
+    const element=document.querySelector("h2");
+    const parentElement=element.parentNode;
+parentElement.removeChild(element);
+}
+
+      </script>
+</html>

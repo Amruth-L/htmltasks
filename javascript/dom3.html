@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> my room</title>
+    </head>
+    <body>
+        <div id="room">
+            <h1 id="status">The light is OFF</h1>
+      <button id="switch">FLip Switch</button>
+        </div>
+    <script>
+        const bulbstatus=document.querySelector('#status');
+        const mybutton=document.querySelector('#switch');
+        mybutton.addEventListener('click',()=>{
+            bulbstatus.textContent="The light is on";
+            bulbstatus.style.color="orange";
+        })
+    </script>
+    </body>
+</html>

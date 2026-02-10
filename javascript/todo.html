@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO APP</title>
+    </head>
+    <body>
+        <input type="text"></input>
+        <button onclick="addtodo()">ADD TO-DO</button>
+    </body>
+    <script>
+        function addtodo(){
+const inputEl=document.querySelector("input");
+const value=inputEl.value;
+const newDivel=document.createElement("div");
+newDivel.innerHTML=value;
+document.querySelector("body").appendChild(newDivel)    
+}
+    </script>
+</html>
